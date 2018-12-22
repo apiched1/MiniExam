@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-input type="text" placeholder="ชื่อนักเรียน" [(ngModel)]="students.name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="number" placeholder="เพิ่มคะแนนนักเรียน"></ion-input>
+  </ion-item>
+  <button ion-button block (click)="subMit()">Submit</button>
+  
+
+
+</ion-content>
