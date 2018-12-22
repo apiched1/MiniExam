@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { Students } from '../../app/models';
+import { StudentDetailPage } from '../student-detail/student-detail';
 
 
 @Component({
@@ -31,6 +32,9 @@ export class HomePage {
         data => {
         }
       );
+  }
+  Detail(){
+    this.navCtrl.push("StudentDetailPage");
   }
 
 }
