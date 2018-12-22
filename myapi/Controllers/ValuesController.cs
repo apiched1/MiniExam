@@ -13,11 +13,12 @@ namespace myapi.Controllers
     {
         // GET api/values
         public static List<Students> Students = new List<Students>();
+        public static List<Students> Score = new List<Students>();
 
         [HttpPost]
-        public void AddStudent(Students id)
+        public void AddStudent(Students Name)
         {
-            Students.Add(id);
+            Students.Add(Name);
         }
 
         [HttpGet]
@@ -26,17 +27,30 @@ namespace myapi.Controllers
             return Students;
         }
 
-        [HttpGet]
-        public ActionResult<Students> CheckGrade()
-        {
-            var student = new Students();
-            
-            
 
-            return student;
-        }
+            // [HttpGet("{score}")]
+            // public ActionResult<int> checkScore(int score)
+            // {
 
 
+            //     return result;
+            // }
 
-    }
+          
+          
+
+
+
+
+            //  Students.Any(it => it.Score <= 30);
+            //  Students.Any(it => it.Score <= 74 || it.Score >= 63);
+            //  Students.Any(it => it.Score <= 63 || it.Score >= 51);
+            //  Students.Any(it => it.Score <= 30);
+            //  var result = Students;
+
+          
+        
+
+
+}
 }
