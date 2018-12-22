@@ -42,12 +42,7 @@ namespace myapi.Controllers
 
 
 
-            //  Students.Any(it => it.Score <= 30);
-            //  Students.Any(it => it.Score <= 74 || it.Score >= 63);
-            //  Students.Any(it => it.Score <= 63 || it.Score >= 51);
-            //  Students.Any(it => it.Score <= 30);
-            //  var result = Students;
-
+           
           
         
 
